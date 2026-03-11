@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import { BioRhyme } from "next/font/google";
 
-export const metadata: Metadata = {
-  title: "Autoservice Ehra",
-  description:
-    "Modern and fast static website for Autoservice Ehra (KFZ & Motorrad Service).",
-};
+const bioRhyme = BioRhyme({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export default function RootLayout({
   children,
@@ -14,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body className={bioRhyme.className}>
+        {children}
+      </body>
     </html>
   );
 }

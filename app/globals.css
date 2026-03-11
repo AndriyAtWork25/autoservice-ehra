@@ -1,73 +1,21 @@
 @import "tailwindcss";
 
-/*
-  :root enthält globale CSS-Variablen.
-  Diese Farben definieren grob die visuelle Identität der Website.
-*/
-:root {
-  --background: #081120;
-  --background-secondary: #0f1b31;
-  --foreground: #f8fafc;
-
-  --primary: #60a5fa;
-  --primary-strong: #3b82f6;
-
-  --accent: #f97316;
-  --accent-strong: #ea580c;
-
-  --muted: #94a3b8;
-  --card: rgba(255, 255, 255, 0.04);
-  --card-strong: rgba(255, 255, 255, 0.06);
-  --border: rgba(255, 255, 255, 0.1);
-}
-
-/* Basis-Reset für berechenbares Verhalten */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Weiches Scrollen bei Anchor-Links */
-html {
-  scroll-behavior: smooth;
+html,
+body {
+  width: 100%;
+  min-height: 100%;
 }
 
-/* Grundstil des Bodys */
 body {
-  min-height: 100vh;
-  background:
-    radial-gradient(circle at top, rgba(59, 130, 246, 0.18) 0%, transparent 28%),
-    radial-gradient(circle at right, rgba(249, 115, 22, 0.12) 0%, transparent 22%),
-    linear-gradient(180deg, #081120 0%, #0b1426 50%, #050816 100%);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Links übernehmen die Farbe vom Eltern-Element */
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Bilder verhalten sich sauber responsive */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Wiederverwendbarer Inhalts-Container */
-.container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media (min-width: 768px) {
-  .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+html {
+  scroll-behavior: smooth;
 }
