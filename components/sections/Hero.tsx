@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative min-h-screen">
 
       <Image
-        src="/hero-bg6.jpg"
+        src="/hero-bg9.jpg"
         alt="background"
         fill
         className="object-cover"
