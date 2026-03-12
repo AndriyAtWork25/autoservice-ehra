@@ -8,7 +8,160 @@ export default function HomePage() {
       <Navbar />
   <Hero />
 
-<section id="services" className="min-h-screen"></section>
+<section
+  id="services"
+  className="relative min-h-screen px-10 pt-40 py-20"
+>
+  <img
+    src="/service-bg2.jpg"
+    alt="Services background"
+    className="absolute inset-0 w-full h-full object-cover -z-10"
+  />
+  <div className="absolute inset-0 bg-black/40 -z-10"></div>
+
+  {/* HEADER BLOCK */}
+  <div className="relative top-22 left-5">
+
+    <span className="absolute -top-22 left-0 text-[120px] font-bold text-white/10 select-none">
+      SERVICE
+    </span>
+
+    <h2 className="inline-block text-5xl font-bold text-white relative left-20">
+      Kompletter Fahrzeugservice <br />
+      für Auto und Motorrad
+      <span className="absolute left-0 -bottom-3 h-[3px] w-[70%] bg-white"></span>
+    </h2>
+
+    <div className="absolute w-[350px] h-[450px] top-[20px] left-[1100px] transition duration-300 hover:[transform:perspective(1000px)_rotateY(-8deg)_rotateX(4deg)_scale(1.05)]">
+
+      <div className="absolute -top-6 -left-6 w-full h-full border border-white/60 rounded-[80px_20px_80px_20px]"></div>
+
+      <img
+        src="/motor.png"
+        alt="Motor"
+        className="relative w-full h-full object-cover rounded-[80px_20px_80px_20px] shadow-2xl"
+      />
+
+    </div>
+
+  </div>
+
+  {/* HIER SERVICE BOX EINSETZEN */}
+  <div className="absolute top-[250px] left-[120px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+
+    <img
+      src="/service-oil.jpg"
+      alt="Ölwechsel und Motorservice"
+      className="h-[80px] w-full object-cover"
+    />
+
+    <div className="p-6 text-center">
+      <h3 className="text-lg font-bold text-white">
+        Ölwechsel & Motorservice
+      </h3>
+
+    </div>
+
+  </div>
+
+  
+  {/* HIER SERVICE BOX EINSETZEN */}
+  <div className="absolute top-[250px] left-[400px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+
+    <img
+      src="/service-inspection.png"
+      alt="Inspektion und Wartung"
+      className="h-[80px] w-full object-cover"
+    />
+
+    <div className="p-6 text-center">
+      <h3 className="text-lg font-bold text-white">
+        Inspektion & Wartung
+      </h3>
+
+    </div>
+
+  </div>
+
+  {/* HIER SERVICE BOX EINSETZEN */}
+  <div className="absolute top-[250px] left-[680px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+
+    <img
+      src="/service-brakes.png"
+      alt="Bremsenservice"
+      className="h-[80px] w-full object-cover"
+    />
+
+    <div className="p-6 text-center">
+      <h3 className="text-lg font-bold text-white">
+        Bremsen wechseln <br />
+          & Service
+      </h3>
+
+    </div>
+
+  </div>
+
+  {/* HIER SERVICE BOX EINSETZEN */}
+  <div className="absolute top-[450px] left-[120px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+
+    <img
+      src="/service-tyres.png"
+      alt="Reifenwechsel & Reifenservice"
+      className="h-[80px] w-full object-cover"
+    />
+
+    <div className="p-6 text-center">
+      <h3 className="text-lg font-bold text-white">
+        Reifenwechsel & <br />
+        Reifenservice
+      </h3>
+
+    </div>
+
+  </div>
+
+
+  {/* HIER SERVICE BOX EINSETZEN */}
+  <div className="absolute top-[450px] left-[400px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+
+    <img
+      src="/service-diagnostic.png"
+      alt="Diagnose & Fehlerauslesen"
+      className="h-[80px] w-full object-cover"
+    />
+
+    <div className="p-6 text-center">
+      <h3 className="text-lg font-bold text-white">
+        Diagnose & <br />
+        Fehlerauslesen
+      </h3>
+
+    </div>
+
+  </div>
+
+
+   {/* HIER SERVICE BOX EINSETZEN */}
+  <div className="absolute top-[450px] left-[680px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+
+    <img
+      src="/service-other.png"
+      alt="Und vieles mehr für Ihr Auto und Motorrad"
+      className="h-[80px] w-full object-cover"
+    />
+
+    <div className="p-6 text-center">
+      <h3 className="text-lg font-bold text-white">
+        Und vieles mehr für  <br />
+        Ihr Auto und Motorrad
+      </h3>
+
+    </div>
+
+  </div>
+
+</section>
 <section id="about" className="min-h-screen"></section>
 <section id="address" className="min-h-screen"></section>
 <section id="contact" className="min-h-screen"></section>

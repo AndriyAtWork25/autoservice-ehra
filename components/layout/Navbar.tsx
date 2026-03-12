@@ -41,7 +41,7 @@ export default function Navbar() {
           </div>
         </div>
          {/* Navigation Buttons rechts */}
-    <div className="absolute right-10 top-8 flex gap-8 text-white text-xl font-semibold">
+    <div className="absolute right-10 top-8 flex gap-8 text-white text-2xl font-semibold">
        <a href="#services" className="relative group">
     Service
     <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
