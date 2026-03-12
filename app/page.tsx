@@ -162,7 +162,66 @@ export default function HomePage() {
   </div>
 
 </section>
-<section id="about" className="min-h-screen"></section>
+<section id="about" className="relative min-h-screen px-10 pt-40 py-20">
+  <img
+    src="/service-bg2.jpg"
+    alt="Über uns Hintergrund"
+    className="absolute inset-0 w-full h-full object-cover -z-10"
+  />
+
+  <div className="absolute inset-0 bg-black/55 -z-10"></div>
+
+  {/* ABOUT Hintergrund */}
+<span className="absolute top-[60px] left-[35px] text-[120px] font-bold text-white/10 select-none">
+  ABOUT
+</span>
+
+{/* linker Bereich */}
+<div className="absolute left-[120px] top-[150px]">
+
+  <h2 className="relative text-5xl font-bold text-white">
+    Über uns
+    <span className="absolute left-0 -bottom-1 h-[3px] w-[70%] bg-white"></span>
+  </h2>
+
+  <p className="mt-12 max-w-[520px] text-2xl leading-10 text-white/85">
+    Wir stehen für zuverlässigen Fahrzeugservice, saubere Arbeit und
+    persönliche Betreuung. Ob Auto oder Motorrad, bei uns bekommen
+    Sie Service, Wartung und Reparatur aus einer Hand.
+  </p>
+
+</div>
+  {/* rechter Statistik-Bereich */}
+  <div className="absolute right-[120px] top-[180px] grid grid-cols-2 gap-x-20 gap-y-16">
+    <div className="w-[320px] border-b border-white/40 pb-8">
+      <h3 className="text-6xl font-bold text-white">10+</h3>
+      <p className="mt-3 text-3xl uppercase text-white/60">
+        Jahre Erfahrung
+      </p>
+    </div>
+
+    <div className="w-[320px] border-b border-white/40 pb-8">
+      <h3 className="text-6xl font-bold text-white">100%</h3>
+      <p className="mt-3 text-3xl uppercase text-white/60">
+        Einsatz für Qualität
+      </p>
+    </div>
+
+    <div className="w-[320px] border-b border-white/40 pb-8">
+      <h3 className="text-6xl font-bold text-white">Auto & Motorrad</h3>
+      <p className="mt-3 text-3xl uppercase text-white/60">
+        Service aus einer Hand
+      </p>
+    </div>
+
+    <div className="w-[320px] border-b border-white/40 pb-8">
+      <h3 className="text-6xl font-bold text-white">Persönlich & Privat</h3>
+      <p className="mt-3 text-3xl uppercase text-white/60">
+        Direkt, ehrlich, nah
+      </p>
+    </div>
+  </div>
+</section>
 <section id="address" className="min-h-screen"></section>
 <section id="contact" className="min-h-screen"></section>
 
