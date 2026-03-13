@@ -285,12 +285,13 @@ export default function HomePage() {
     href="https://maps.app.goo.gl/ToEY8ZMsyJshBgJA9?g_st=it"
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-block text-3xl font-bold text-white transition hover:text-white/80"
+    className="group relative mt-10 inline-block text-4xl leading-8 text-white/80 transition hover:text-white"
   >
     Musterstraße 12, 38468 Ehra-Lessien
+    <span className="absolute left-0 -bottom-2 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
   </a>
 
-  <p className="mt-5 text-xl leading-8 text-white/80">
+  <p className="relative top-6 text-lg leading-8 text-white/80">
     Besuchen Sie unseren Standort direkt vor Ort oder öffnen Sie die Route
     bequem in Google Maps.
   </p>
@@ -322,7 +323,110 @@ export default function HomePage() {
   </div>
 
 </section>
-<section id="contact" className="min-h-screen"></section>
+<section id="contact" className="relative min-h-screen px-10 pt-40 py-20">
+
+  <img
+    src="/service-bg2.jpg"
+    alt="Über uns Hintergrund"
+    className="absolute inset-0 w-full h-full object-cover -z-10"
+  />
+
+    <div className="absolute inset-0 bg-black/60 -z-10"></div>
+
+  {/* linker Block */}
+  <div className="absolute left-[120px] top-[160px] flex flex-col items-start">
+    <img
+      src="/logo1.png"
+      alt="Autoservice Ehra Logo"
+      className="w-[260px] object-contain"
+    />
+
+    <div className="relative left-[75px] mt-10 flex items-center gap-6">
+      <a
+        href="https://www.instagram.com/autoservice_ehra?igsh=aTh2NHY1ZWtrdnc2"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white transition hover:scale-110 hover:text-white/80"
+        aria-label="Instagram"
+      >
+        <img
+          src="/instagram-icon2.png"
+          alt="Instagram"
+          className="w-[42px] h-[42px] object-contain"
+        />
+      </a>
+
+      <a
+        href="https://maps.app.goo.gl/ToEY8ZMsyJshBgJA9?g_st=it"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white transition hover:scale-110 hover:text-white/80"
+        aria-label="Google Maps"
+      >
+        <img
+          src="/googlemaps-icon2.png"
+          alt="Google Maps"
+          className="w-[42px] h-[42px] object-contain"
+        />
+      </a>
+    </div>
+  </div>
+
+  {/* rechter Kontakt Bereich */}
+<div className="absolute right-[220px] top-[160px] w-[420px] text-white flex flex-col gap-16">
+
+  {/* Adresse */}
+  <div className="mb-14">
+    <h3 className="text-2xl font-bold tracking-wider uppercase">
+      Adresse:
+    </h3>
+
+    <div className="mt-3 h-[2px] w-full bg-white/40"></div>
+
+    <a
+  href="https://maps.app.goo.gl/ToEY8ZMsyJshBgJA9?g_st=it"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-10 inline-block text-xl leading-8 text-white/80 transition hover:text-white"
+>
+  Musterstraße 12 <br />
+  38468 Ehra-Lessien
+</a>
+  </div>
+
+  {/* Öffnungszeiten */}
+  <div className="mb-14">
+    <h3 className="text-2xl font-bold tracking-wider uppercase">
+      Öffnungszeiten:
+    </h3>
+
+    <div className="mt-3 h-[2px] w-full bg-white/40"></div>
+
+    <p className="mt-6 text-xl leading-8 text-white/80">
+      Mo – Fr: 08:00 – 17:00 <br />
+      Sa: 08:00 – 14:00
+    </p>
+  </div>
+
+  {/* Telefonnummer */}
+  <div>
+    <h3 className="text-2xl font-bold tracking-wider uppercase">
+      Telefon:
+    </h3>
+
+    <div className="mt-3 h-[2px] w-full bg-white/40"></div>
+
+    <a
+      href="tel:+4905377800205"
+      className="mt-6 inline-block text-xl text-white/80 transition hover:text-white"
+    >
+      05377 / 800205
+    </a>
+  </div>
+
+</div>
+
+</section>
 
   <Footer />
     </>
