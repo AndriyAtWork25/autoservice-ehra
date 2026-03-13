@@ -1,8 +1,29 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Footer from "@/components/layout/Footer";
 
 export default function HomePage() {
+  const addressImages = [
+    "/address-1.jpg",
+    "/address-2.jpg",
+    "/address-3.jpg",
+    "/address-4.jpg",
+  ];
+
+  const [currentAddressImage, setCurrentAddressImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentAddressImage((prev) =>
+        prev === addressImages.length - 1 ? 0 : prev + 1
+      );
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [addressImages.length]);
   return (
     <>
       <Navbar />
@@ -222,7 +243,85 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-<section id="address" className="min-h-screen"></section>
+<section id="address" className="relative min-h-screen px-10 pt-40 py-20">
+  <img
+    src="/service-bg2.jpg"
+    alt="Über uns Hintergrund"
+    className="absolute inset-0 w-full h-full object-cover -z-10"
+  />
+
+   <div className="absolute inset-0 bg-black/55 -z-10"></div>
+
+  {/* ABOUT Hintergrund */}
+<span className="absolute top-[40px] left-[35px] text-[120px] font-bold text-white/10 select-none">
+  Adresse
+</span>
+
+{/* linker Bereich */}
+<div className="absolute left-[120px] top-[140px]">
+
+  <h2 className="relative text-5xl font-bold text-white">
+    Hier sind wir
+    <span className="absolute left-0 -bottom-1 h-[3px] w-full bg-white"></span>
+  </h2>
+  </div>
+
+ {/* Maps Bild Box */}
+<div className="absolute left-[120px] top-[250px] w-[520px] h-[280px]">
+  {/* weißer Rahmen */}
+  <div className="absolute -top-5 -left-5 w-full h-full border border-white/60 rounded-[70px_20px_70px_20px]"></div>
+
+  {/* Bild */}
+  <img
+    src="/maps-preview2.jpg"
+    alt="Standort Karte"
+    className="relative w-full h-full object-cover rounded-[70px_20px_70px_20px] shadow-2xl transition duration-300 hover:[transform:perspective(1000px)_rotateY(-6deg)_rotateX(3deg)_scale(1.03)]"
+  />
+</div>
+
+{/* Adresse + Text darunter */}
+<div className="absolute left-[120px] top-[540px] max-w-[520px]">
+  <a
+    href="https://maps.app.goo.gl/ToEY8ZMsyJshBgJA9?g_st=it"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block text-3xl font-bold text-white transition hover:text-white/80"
+  >
+    Musterstraße 12, 38468 Ehra-Lessien
+  </a>
+
+  <p className="mt-5 text-xl leading-8 text-white/80">
+    Besuchen Sie unseren Standort direkt vor Ort oder öffnen Sie die Route
+    bequem in Google Maps.
+  </p>
+</div>
+
+   <div className="absolute top-[140px] right-[180px] w-[340px] h-[430px]">
+    {/* weißer Rahmen */}
+    <div className="absolute -top-5 -left-5 w-full h-full border border-white/60 rounded-[70px_20px_70px_20px]"></div>
+
+    {/* Bild Slider */}
+    <img
+      src={addressImages[currentAddressImage]}
+      alt="Werkstatt Bild"
+      className="relative w-full h-full object-cover rounded-[70px_20px_70px_20px] shadow-2xl transition duration-500 hover:[transform:perspective(1000px)_rotateY(-8deg)_rotateX(4deg)_scale(1.03)]"
+    />
+
+    {/* Punkte */}
+    <div className="absolute -bottom-10 left-1/2 flex -translate-x-1/2 gap-3">
+      {addressImages.map((_, index) => (
+        <button
+          key={index}
+          onClick={() => setCurrentAddressImage(index)}
+          className={`h-3 w-3 rounded-full transition ${
+            currentAddressImage === index ? "bg-white" : "bg-white/40"
+          }`}
+        />
+      ))}
+    </div>
+  </div>
+
+</section>
 <section id="contact" className="min-h-screen"></section>
 
   <Footer />
