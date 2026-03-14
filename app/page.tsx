@@ -1,9 +1,11 @@
 "use client";
 
+import Reveal from "@/components/ui/Reveal";
 import { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Footer from "@/components/layout/Footer";
+
 
 export default function HomePage() {
   const addressImages = [
@@ -41,8 +43,7 @@ export default function HomePage() {
   <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
   {/* HEADER BLOCK */}
-  <div className="relative top-22 left-5">
-
+  <Reveal className="relative top-22 left-5">
     <span className="absolute -top-22 left-0 text-[120px] font-bold text-white/10 select-none">
       SERVICE
     </span>
@@ -65,10 +66,10 @@ export default function HomePage() {
 
     </div>
 
-  </div>
+  </Reveal>
 
   {/* HIER SERVICE BOX EINSETZEN */}
-  <div className="absolute top-[250px] left-[120px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+  <Reveal className="absolute top-[250px] left-[120px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
 
     <img
       src="/service-oil.jpg"
@@ -76,18 +77,18 @@ export default function HomePage() {
       className="h-[80px] w-full object-cover"
     />
 
-    <div className="p-6 text-center">
+    <Reveal className="p-6 text-center">
       <h3 className="text-lg font-bold text-white">
         Ölwechsel & Motorservice
       </h3>
 
-    </div>
+    </Reveal>
 
-  </div>
+  </Reveal>
 
   
   {/* HIER SERVICE BOX EINSETZEN */}
-  <div className="absolute top-[250px] left-[400px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+  <Reveal className="absolute top-[250px] left-[400px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
 
     <img
       src="/service-inspection.png"
@@ -95,17 +96,17 @@ export default function HomePage() {
       className="h-[80px] w-full object-cover"
     />
 
-    <div className="p-6 text-center">
+    <Reveal className="p-6 text-center">
       <h3 className="text-lg font-bold text-white">
         Inspektion & Wartung
       </h3>
 
-    </div>
+    </Reveal>
 
-  </div>
+  </Reveal>
 
   {/* HIER SERVICE BOX EINSETZEN */}
-  <div className="absolute top-[250px] left-[680px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+  <Reveal className="absolute top-[250px] left-[680px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
 
     <img
       src="/service-brakes.png"
@@ -113,18 +114,18 @@ export default function HomePage() {
       className="h-[80px] w-full object-cover"
     />
 
-    <div className="p-6 text-center">
+    <Reveal className="p-6 text-center">
       <h3 className="text-lg font-bold text-white">
         Bremsen wechseln <br />
           & Service
       </h3>
 
-    </div>
+    </Reveal>
 
-  </div>
+  </Reveal>
 
   {/* HIER SERVICE BOX EINSETZEN */}
-  <div className="absolute top-[450px] left-[120px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+  <Reveal className="absolute top-[450px] left-[120px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
 
     <img
       src="/service-tyres.png"
@@ -132,19 +133,19 @@ export default function HomePage() {
       className="h-[80px] w-full object-cover"
     />
 
-    <div className="p-6 text-center">
+    <Reveal className="p-6 text-center">
       <h3 className="text-lg font-bold text-white">
         Reifenwechsel & <br />
         Reifenservice
       </h3>
 
-    </div>
+    </Reveal>
 
-  </div>
+  </Reveal>
 
 
   {/* HIER SERVICE BOX EINSETZEN */}
-  <div className="absolute top-[450px] left-[400px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+  <Reveal className="absolute top-[450px] left-[400px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
 
     <img
       src="/service-diagnostic.png"
@@ -152,19 +153,19 @@ export default function HomePage() {
       className="h-[80px] w-full object-cover"
     />
 
-    <div className="p-6 text-center">
+    <Reveal className="p-6 text-center">
       <h3 className="text-lg font-bold text-white">
         Diagnose & <br />
         Fehlerauslesen
       </h3>
 
-    </div>
+    </Reveal>
 
-  </div>
+  </Reveal>
 
 
    {/* HIER SERVICE BOX EINSETZEN */}
-  <div className="absolute top-[450px] left-[680px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
+  <Reveal className="absolute top-[450px] left-[680px] w-[200px] overflow-hidden rounded-[28px] bg-[#2b2b2b]/95 shadow-[0_20px_50px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:[transform:perspective(1000px)_rotateX(2deg)_rotateY(-4deg)]">
 
     <img
       src="/service-other.png"
@@ -172,15 +173,15 @@ export default function HomePage() {
       className="h-[80px] w-full object-cover"
     />
 
-    <div className="p-6 text-center">
+    <Reveal className="p-6 text-center">
       <h3 className="text-lg font-bold text-white">
         Und vieles mehr für  <br />
         Ihr Auto und Motorrad
       </h3>
 
-    </div>
+    </Reveal>
 
-  </div>
+  </Reveal>
 
 </section>
 <section id="about" className="relative min-h-screen px-10 pt-40 py-20">
@@ -198,7 +199,7 @@ export default function HomePage() {
 </span>
 
 {/* linker Bereich */}
-<div className="absolute left-[120px] top-[150px]">
+<Reveal className="absolute left-[120px] top-[150px]">
 
   <h2 className="relative text-5xl font-bold text-white">
     Über uns
@@ -211,9 +212,9 @@ export default function HomePage() {
     Sie Service, Wartung und Reparatur aus einer Hand.
   </p>
 
-</div>
+</Reveal>
   {/* rechter Statistik-Bereich */}
-  <div className="absolute right-[120px] top-[180px] grid grid-cols-2 gap-x-20 gap-y-16">
+  <Reveal className="absolute right-[120px] top-[180px] grid grid-cols-2 gap-x-20 gap-y-16">
     <div className="w-[320px] border-b border-white/40 pb-8">
       <h3 className="text-6xl font-bold text-white">10+</h3>
       <p className="mt-3 text-3xl uppercase text-white/60">
@@ -241,7 +242,7 @@ export default function HomePage() {
         Direkt, ehrlich, nah
       </p>
     </div>
-  </div>
+  </Reveal>
 </section>
 <section id="address" className="relative min-h-screen px-10 pt-40 py-20">
   <img
@@ -258,16 +259,16 @@ export default function HomePage() {
 </span>
 
 {/* linker Bereich */}
-<div className="absolute left-[120px] top-[140px]">
+<Reveal className="absolute left-[120px] top-[140px]">
 
   <h2 className="relative text-5xl font-bold text-white">
     Hier sind wir
     <span className="absolute left-0 -bottom-1 h-[3px] w-full bg-white"></span>
   </h2>
-  </div>
+  </Reveal>
 
  {/* Maps Bild Box */}
-<div className="absolute left-[120px] top-[250px] w-[520px] h-[280px]">
+<Reveal className="absolute left-[120px] top-[250px] w-[520px] h-[280px]">
   {/* weißer Rahmen */}
   <div className="absolute -top-5 -left-5 w-full h-full border border-white/60 rounded-[70px_20px_70px_20px]"></div>
 
@@ -277,15 +278,15 @@ export default function HomePage() {
     alt="Standort Karte"
     className="relative w-full h-full object-cover rounded-[70px_20px_70px_20px] shadow-2xl transition duration-300 hover:[transform:perspective(1000px)_rotateY(-6deg)_rotateX(3deg)_scale(1.03)]"
   />
-</div>
+</Reveal>
 
 {/* Adresse + Text darunter */}
-<div className="absolute left-[120px] top-[540px] max-w-[520px]">
+<Reveal className="absolute left-[120px] top-[540px] max-w-[520px]">
   <a
     href="https://maps.app.goo.gl/ToEY8ZMsyJshBgJA9?g_st=it"
     target="_blank"
     rel="noopener noreferrer"
-    className="group relative mt-10 inline-block text-4xl leading-8 text-white/80 transition hover:text-white"
+    className="group relative mt-10 inline-block text-4xl text-white transition hover:text-white"
   >
     Musterstraße 12, 38468 Ehra-Lessien
     <span className="absolute left-0 -bottom-2 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -295,9 +296,9 @@ export default function HomePage() {
     Besuchen Sie unseren Standort direkt vor Ort oder öffnen Sie die Route
     bequem in Google Maps.
   </p>
-</div>
+</Reveal>
 
-   <div className="absolute top-[140px] right-[180px] w-[340px] h-[430px]">
+   <Reveal className="absolute top-[140px] right-[180px] w-[340px] h-[430px]">
     {/* weißer Rahmen */}
     <div className="absolute -top-5 -left-5 w-full h-full border border-white/60 rounded-[70px_20px_70px_20px]"></div>
 
@@ -320,7 +321,7 @@ export default function HomePage() {
         />
       ))}
     </div>
-  </div>
+  </Reveal>
 
 </section>
 <section id="contact" className="relative min-h-screen px-10 pt-40 py-20">
@@ -334,7 +335,7 @@ export default function HomePage() {
     <div className="absolute inset-0 bg-black/60 -z-10"></div>
 
   {/* linker Block */}
-  <div className="absolute left-[120px] top-[160px] flex flex-col items-start">
+  <Reveal className="absolute left-[120px] top-[160px] flex flex-col items-start">
     <img
       src="/logo1.png"
       alt="Autoservice Ehra Logo"
@@ -370,10 +371,10 @@ export default function HomePage() {
         />
       </a>
     </div>
-  </div>
+  </Reveal>
 
   {/* rechter Kontakt Bereich */}
-<div className="absolute right-[220px] top-[160px] w-[420px] text-white flex flex-col gap-16">
+  <Reveal className="absolute right-[220px] top-[160px] w-[420px] text-white flex flex-col gap-16">
 
   {/* Adresse */}
   <div className="mb-14">
@@ -424,7 +425,7 @@ export default function HomePage() {
     </a>
   </div>
 
-</div>
+</Reveal>
 
 </section>
 
