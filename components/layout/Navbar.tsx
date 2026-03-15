@@ -19,13 +19,7 @@ export default function Navbar() {
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
   return (
-   <nav
-  className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
-    scrolled
-      ? "bg-black/35 backdrop-blur-xl border-b border-white/10 shadow-[0_10px_35px_rgba(0,0,0,0.22)]"
-      : "bg-transparent"
-  }`}
->
+   <nav className="fixed left-0 top-0 z-50 w-full bg-black/5 backdrop-blur-xl border-b border-white/10">
     <div className="absolute inset-0 -z-0 overflow-hidden">
     <div
   className={`h-full w-full bg-black/80 transition-transform duration-700 ease-out ${
@@ -72,6 +66,17 @@ export default function Navbar() {
         </div>
          {/* Navigation Buttons rechts */}
     <div className="absolute right-10 top-8 flex gap-8 text-white text-2xl font-semibold">
+
+      <button
+  onClick={() => {
+    window.location.href = "/";
+  }}
+  className="relative group text-white"
+>
+  Home
+  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+</button>
+
        <a href="#services" className="relative group">
     Service
     <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
