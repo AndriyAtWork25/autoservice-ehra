@@ -4,6 +4,19 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+function WhatsAppIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M19.05 4.94A9.87 9.87 0 0 0 12.03 2C6.56 2 2.1 6.46 2.1 11.93c0 1.75.46 3.46 1.33 4.97L2 22l5.26-1.38a9.9 9.9 0 0 0 4.77 1.22h.01c5.47 0 9.93-4.46 9.93-9.93a9.83 9.83 0 0 0-2.92-6.97ZM12.04 20.16h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.27-4.38c0-4.51 3.68-8.19 8.21-8.19 2.19 0 4.24.85 5.79 2.39a8.13 8.13 0 0 1 2.4 5.8c0 4.53-3.68 8.22-8.15 8.22Zm4.49-6.13c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.76.93-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.17-1.39-1.31-1.63-.14-.24-.01-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.68 2.57 4.07 3.6.57.25 1.02.39 1.37.5.58.18 1.11.15 1.53.09.47-.07 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28Z" />
+    </svg>
+  );
+}
+
 export default function Navbar() {
   const [revealed, setRevealed] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,12 +54,22 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <a
             href="tel:+4905377800205"
             className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-bold text-black"
           >
             Anrufen
+          </a>
+
+          <a
+            href="https://wa.me/495377800205"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-white bg-white px-3 py-2 text-sm font-bold text-black transition hover:bg-black hover:text-white"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+            WA
           </a>
 
           <button
@@ -128,45 +151,73 @@ export default function Navbar() {
             >
               05377 / 800205
             </a>
+
+            <a
+              href="https://wa.me/495377800205"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-[30px_10px_30px_10px] border border-white bg-white px-6 py-3 text-base font-bold text-black transition hover:bg-black hover:text-white"
+            >
+              <WhatsAppIcon className="h-4 w-4" />
+              WhatsApp schreiben
+            </a>
           </div>
         </div>
       )}
 
       {/* DESKTOP */}
-      <div className="relative z-10 hidden lg:flex items-center px-6 py-6 md:px-10">
-        {/* Logo + Call Bereich */}
-        <div className="ml-10 flex items-center gap-8">
+      <div className="relative z-10 hidden items-center px-6 py-5 md:px-8 lg:flex">
+        <div className="ml-8 flex items-center gap-6">
           <Link href="/">
             <Image
               src="/logo1.png"
               alt="Autoservice Ehra Logo"
               width={180}
               height={60}
-              className="relative left-6 w-[120px] md:w-[140px]"
+              className="relative left-4 w-[100px] md:w-[120px]"
               priority
             />
           </Link>
 
-          <div className="relative left-4 top-6 flex flex-col items-start">
-            <span className="text-2xl font-semibold tracking-wide text-white md:text-3xl">
-              Jetzt anrufen
-            </span>
-
-            <a
-              href="tel:+4905377800205"
-              className="group relative inline-flex min-w-[180px] items-center justify-center overflow-hidden rounded-[30px_10px_30px_10px] border border-white bg-white px-7 py-3 text-lg font-bold text-black"
-            >
-              <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
-                05377 / 800205
+          <div className="relative left-2 top-4 flex items-start gap-4">
+            <div className="flex flex-col items-start">
+              <span className="text-xl font-semibold tracking-wide text-white md:text-2xl">
+                Jetzt anrufen
               </span>
 
-              <span className="absolute inset-0 -translate-x-full transform bg-black transition-transform duration-300 group-hover:translate-x-0"></span>
-            </a>
+              <a
+                href="tel:+4905377800205"
+                className="group relative inline-flex min-w-[150px] items-center justify-center overflow-hidden rounded-[30px_10px_30px_10px] border border-white bg-white px-5 py-2.5 text-base font-bold text-black"
+              >
+                <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+                  05377 / 800205
+                </span>
+                <span className="absolute inset-0 -translate-x-full transform bg-black transition-transform duration-300 group-hover:translate-x-0"></span>
+              </a>
+            </div>
+
+            <div className="flex flex-col items-start">
+              <span className="text-xl font-semibold tracking-wide text-white md:text-2xl">
+                Jetzt schreiben
+              </span>
+
+              <a
+                href="https://wa.me/495377800205"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex min-w-[180px] items-center justify-center gap-2 overflow-hidden rounded-[30px_10px_30px_10px] border border-white bg-white px-5 py-2.5 text-base font-bold text-black"
+              >
+                <span className="relative z-10 flex items-center gap-2 transition-colors duration-300 group-hover:text-white">
+                  <WhatsAppIcon className="h-4 w-4" />
+                  05377 / 800205
+                </span>
+                <span className="absolute inset-0 -translate-x-full transform bg-black transition-transform duration-300 group-hover:translate-x-0"></span>
+              </a>
+            </div>
           </div>
         </div>
 
-        {/* Navigation Buttons rechts */}
-        <div className="absolute right-10 top-8 flex gap-8 text-2xl font-semibold text-white">
+        <div className="absolute right-8 top-8 flex gap-6 text-lg font-semibold text-white xl:text-xl">
           <button
             onClick={() => {
               window.location.href = "/";
