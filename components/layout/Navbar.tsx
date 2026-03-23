@@ -43,75 +43,73 @@ export default function Navbar() {
 
       {/* MOBILE / TABLET */}
       <div className="relative z-10 flex items-center justify-between px-4 py-4 lg:hidden">
-        <Link href="/" onClick={closeMenu}>
-          <Image
-            src="/logo1.png"
-            alt="Autoservice Ehra Logo"
-            width={120}
-            height={50}
-            className="w-[90px] object-contain"
-            priority
-          />
-        </Link>
+  <Link href="/" onClick={closeMenu}>
+    <Image
+      src="/logo1.png"
+      alt="Autoservice Ehra Logo"
+      width={120}
+      height={50}
+      className="w-[82px] object-contain"
+      priority
+    />
+  </Link>
 
-        <div className="flex items-center gap-2">
-          <a
-            href="tel:+4905377800205"
-            className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-bold text-black"
-          >
-            Anrufen
-          </a>
+  <div className="flex items-center gap-2">
+    <a
+  href="tel:+4905377800205"
+  className="inline-flex min-h-[40px] min-w-[95px] items-center justify-center rounded-full bg-white px-5 py-2 text-[13px] font-bold text-black"
+>
+  Anrufen
+</a>
 
-          <a
-            href="https://wa.me/495377800205"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-white bg-white px-3 py-2 text-sm font-bold text-black transition hover:bg-black hover:text-white"
-          >
-            <WhatsAppIcon className="h-4 w-4" />
-            WA
-          </a>
+<a
+  href="https://wa.me/495377800205"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex min-h-[40px] min-w-[90px] items-center justify-center gap-1.5 rounded-full border border-white bg-white px-5 py-2 text-[13px] font-bold text-black transition hover:bg-black hover:text-white"
+>
+  <WhatsAppIcon className="h-4 w-4" />
+  WhatsApp
+</a>
 
-          <button
-            onClick={() => setMenuOpen((prev) => !prev)}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white"
-            aria-label="Menü öffnen"
-            aria-expanded={menuOpen}
-          >
-            <div className="flex flex-col gap-1.5">
-              <span
-                className={`block h-[2px] w-5 bg-white transition ${
-                  menuOpen ? "translate-y-[8px] rotate-45" : ""
-                }`}
-              />
-              <span
-                className={`block h-[2px] w-5 bg-white transition ${
-                  menuOpen ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`block h-[2px] w-5 bg-white transition ${
-                  menuOpen ? "-translate-y-[8px] -rotate-45" : ""
-                }`}
-              />
-            </div>
-          </button>
-        </div>
+    <button
+      onClick={() => setMenuOpen((prev) => !prev)}
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white"
+      aria-label="Menü öffnen"
+      aria-expanded={menuOpen}
+    >
+      <div className="flex flex-col gap-1.5">
+        <span
+          className={`block h-[2px] w-5 bg-white transition ${
+            menuOpen ? "translate-y-[8px] rotate-45" : ""
+          }`}
+        />
+        <span
+          className={`block h-[2px] w-5 bg-white transition ${
+            menuOpen ? "opacity-0" : ""
+          }`}
+        />
+        <span
+          className={`block h-[2px] w-5 bg-white transition ${
+            menuOpen ? "-translate-y-[8px] -rotate-45" : ""
+          }`}
+        />
       </div>
+    </button>
+  </div>
+</div>
 
       {/* MOBILE MENU */}
       {menuOpen && (
         <div className="relative z-10 border-t border-white/10 bg-black/95 px-4 pb-6 pt-4 lg:hidden">
           <div className="flex flex-col gap-4 text-white">
-            <button
-              onClick={() => {
-                window.location.href = "/";
-                closeMenu();
-              }}
-              className="text-left text-lg font-semibold"
-            >
-              Home
-            </button>
+            <Link
+  href="/"
+  onClick={closeMenu}
+  className="text-left text-lg font-semibold"
+>
+  Home
+</Link>
 
             <a
               href="#services"
@@ -218,15 +216,10 @@ export default function Navbar() {
         </div>
 
         <div className="absolute right-8 top-8 flex gap-6 text-lg font-semibold text-white xl:text-xl">
-          <button
-            onClick={() => {
-              window.location.href = "/";
-            }}
-            className="group relative text-white"
-          >
-            Home
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </button>
+          <Link href="/" className="group relative text-white">
+  Home
+  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+</Link>
 
           <a href="#services" className="group relative">
             Service
