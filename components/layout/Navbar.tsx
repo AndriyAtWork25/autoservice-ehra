@@ -56,14 +56,14 @@ export default function Navbar() {
 
   <div className="flex items-center gap-2">
     <a
-  href="tel:+4905377800205"
+  href="tel:05377 800205"
   className="inline-flex min-h-[40px] min-w-[95px] items-center justify-center rounded-full bg-white px-5 py-2 text-[13px] font-bold text-black"
 >
   Anrufen
 </a>
 
 <a
-  href="https://wa.me/495377800205"
+  href="https://wa.me/4917624377675"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex min-h-[40px] min-w-[90px] items-center justify-center gap-1.5 rounded-full border border-white bg-white px-5 py-2 text-[13px] font-bold text-black transition hover:bg-black hover:text-white"
@@ -151,7 +151,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://wa.me/495377800205"
+              href="https://wa.me/4917624377675"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex w-full items-center justify-center gap-2 rounded-[30px_10px_30px_10px] border border-white bg-white px-6 py-3 text-base font-bold text-black transition hover:bg-black hover:text-white"
@@ -200,14 +200,14 @@ export default function Navbar() {
               </span>
 
               <a
-                href="https://wa.me/495377800205"
+                href="https://wa.me/4917624377675"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex min-w-[180px] items-center justify-center gap-2 overflow-hidden rounded-[30px_10px_30px_10px] border border-white bg-white px-5 py-2.5 text-base font-bold text-black"
               >
                 <span className="relative z-10 flex items-center gap-2 transition-colors duration-300 group-hover:text-white">
                   <WhatsAppIcon className="h-4 w-4" />
-                  05377 / 800205
+                  +49 176 24377675
                 </span>
                 <span className="absolute inset-0 -translate-x-full transform bg-black transition-transform duration-300 group-hover:translate-x-0"></span>
               </a>

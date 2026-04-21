@@ -412,7 +412,7 @@ export default function HomePage() {
           rel="noopener noreferrer"
           className="inline-block text-2xl font-bold leading-tight text-white"
         >
-          Musterstraße 12, 38468
+          Fallerslebener Str.8, 38468
           <br />
           Ehra-Lessien
         </a>
@@ -484,7 +484,7 @@ export default function HomePage() {
           rel="noopener noreferrer"
           className="group relative mt-10 inline-block text-4xl text-white transition hover:text-white"
         >
-          Musterstraße 12, 38468 Ehra-Lessien
+          Fallerslebener Str.8, 38468 Ehra-Lessien
           <span className="absolute left-0 -bottom-2 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
 
@@ -589,7 +589,7 @@ export default function HomePage() {
             rel="noopener noreferrer"
             className="mt-4 inline-block text-base leading-7 text-white/80 transition hover:text-white"
           >
-            Musterstraße 12 <br />
+            Fallerslebener Str. 8 <br />
             38468 Ehra-Lessien
           </a>
         </div>
@@ -603,8 +603,10 @@ export default function HomePage() {
           <div className="mt-2 h-[2px] w-full bg-white/40"></div>
 
           <p className="mt-4 text-base leading-7 text-white/80">
-            Mo – Fr: 08:00 – 17:00 <br />
-            Sa: 08:00 – 14:00
+            Mo – Do: 09:00 – 17:00 <br />
+            Fr: 09:00 – 14:30, 16:00 - 17:30 <br />
+            Sa: 10:00 - 15:00 <br />
+            So: Geschlossen
           </p>
         </div>
 
@@ -688,7 +690,7 @@ export default function HomePage() {
             rel="noopener noreferrer"
             className="mt-10 inline-block text-xl leading-8 text-white/80 transition hover:text-white"
           >
-            Musterstraße 12 <br />
+            Fallerslebener Str. 8 <br />
             38468 Ehra-Lessien
           </a>
         </div>
@@ -702,8 +704,10 @@ export default function HomePage() {
           <div className="mt-3 h-[2px] w-full bg-white/40"></div>
 
           <p className="mt-6 text-xl leading-8 text-white/80">
-            Mo – Fr: 08:00 – 17:00 <br />
-            Sa: 08:00 – 14:00
+            Mo – Do: 09:00 – 17:00 <br />
+            Fr: 09:00 – 14:30, 16:00 - 17:30 <br />
+            Sa: 10:00 - 15:00 <br />
+            So: Geschlossen
           </p>
         </div>
 

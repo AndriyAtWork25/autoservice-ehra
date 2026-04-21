@@ -3,9 +3,9 @@ import { BioRhyme } from "next/font/google";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Autoservice Ehra – Werkstatt für Auto & Motorrad",
+  title: "Autoservice Ehra | Werkstatt für Auto & Motorrad",
   description:
-    "Autoservice Ehra – Wartung, Reparatur, Diagnose und Reifenservice in Ehra-Lessien.",
+    "Autoservice Ehra | Wartung, Reparatur, Diagnose und Reifenservice in Ehra-Lessien.",
 };
 
 const bioRhyme = BioRhyme({
