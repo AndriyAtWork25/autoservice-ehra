@@ -174,9 +174,7 @@ export default function Datenschutz() {
                   <div className="mt-3 h-[2px] w-full bg-white/40"></div>
 
                   <p className="mt-6 text-xl leading-8 text-white/80">
-                    Wenn Sie uns per Telefon oder E-Mail kontaktieren, werden
-                    Ihre Angaben zur Bearbeitung der Anfrage und für mögliche
-                    Anschlussfragen gespeichert.
+                    Telefon: 05377 / 800205
                   </p>
                 </div>
               </div>

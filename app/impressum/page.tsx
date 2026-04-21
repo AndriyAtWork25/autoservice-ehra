@@ -179,8 +179,6 @@ export default function Impressum() {
 
                   <p className="mt-6 text-xl leading-8 text-white/80">
                     Telefon: 05377 / 800205
-                    <br />
-                    E-Mail: info@autoservice-ehra.de
                   </p>
                 </div>
               </div>
