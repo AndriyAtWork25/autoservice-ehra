@@ -48,6 +48,7 @@ The website is optimized for:
 - building for real business needs instead of overengineering
 - designing UI/UX for local service businesses
 - focusing on conversion and usability
+- 
 
 ---
 
